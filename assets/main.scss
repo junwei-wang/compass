@@ -71,7 +71,7 @@ since it must be aligned with the content */
 }
 
 /*** author ***/
-.author-container h1 {
+.author-container h2 {
 	font-size: 2.8em;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -112,39 +112,39 @@ footer {
 
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
-@media (min-width: 480px) {
+@media (min-width: 960px) {
 	/* wrapper stays 480px wide past 480px wide and is kept centered */
 	.wrapper {
-		width: 480px;
+		width: 960px;
 		margin: 10% auto 0 auto;
 	}
 }
 
 /* All other devices (768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
 	to accomodate both the header column and the content column */
 	.wrapper {
-		width: 680px;
+		width: 960px;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
 	aligned right */
 	header {
 		float: left;
-		width: 46%;
+		width: 30%;
 		text-align: right;
 	}
 
-	.author-container h1,
+	.author-container h2,
 	.logo-container,
 	.tagline-container p {
 		text-align: right;
 	}
 
 	main {
-		width: 46%;
-		margin-left: 54%;
+		width: 62%;
+		margin-left: 38%;
 		padding: 0;
 	}
 }

@@ -3,22 +3,36 @@ layout: base
 ---
 <div class="wrapper">
     <header>
-        {% if site.compass.logo %}
+        {% if site.general.logo %}
         <div class="logo-container">
-          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.general.logo }}')"></a>
         </div>
         {% endif %}
 
-        {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% if site.general.author %}
+        <div class="author-container"><h2>{{ site.general.author }}</h2></div>
         {% endif %}
 
-        {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% if site.general.tagline %}
+        <div class="tagline-container"><p>
+            {{ site.general.tagline }}
+            {% if site.general.orgnization %}
+                </br> at
+                {% if site.general.orgnization_link %}
+                    <a href="{{ site.general.orgnization_link }}">
+                {% endif %}
+                {{ site.general.orgnization }}
+                {% if site.general.orgnization_link %}
+                    </a>
+                {% endif %}
+            {% endif %}
+        </p></div>
         {% endif %}
+
+
     </header>
     <main>
-      {% if site.compass.include_content %}
+      {% if site.general.include_content %}
       <div class="content">
         {% include content.html %}
       </div>
