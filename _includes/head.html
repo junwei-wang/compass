@@ -1,9 +1,9 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.compass.author }} &#8226; {{ site.compass.tagline | strip_html }}</title>
+  <title>{{ site.general.author }} &#8226; {{ site.general.tagline | strip_html }}</title>
 
-  <link rel="apple-touch-icon" href="{{ site.compass.logo }}"/>
+  <link rel="apple-touch-icon" href="{{ site.general.logo }}"/>
   <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="{{ site.url }}/favicon.ico" />
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/normalize.css">
@@ -13,16 +13,16 @@
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-  <meta name="author" content="{{ site.compass.author }}">
-  <meta name="description" content="{{ site.compass.tagline }}"/>
+  <meta name="author" content="{{ site.general.author }}">
+  <meta name="description" content="{{ site.general.tagline }}"/>
 
-  <meta property="og:title" content="{{ site.compass.tagline }}"/>
+  <meta property="og:title" content="{{ site.general.tagline }}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.compass.logo }}"/>
-  <meta property="og:description" content="{{ site.compass.description }}"/>
-  <meta property="og:site_name" content="{{ site.compass.tagline }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.general.logo }}"/>
+  <meta property="og:description" content="{{ site.general.description }}"/>
+  <meta property="og:site_name" content="{{ site.general.tagline }}">
 
-  {% if site.compass.include_analytics %}
+  {% if site.general.include_analytics %}
   {% include analytics.html %}
   {% endif %}
 </head>

@@ -1,17 +1,17 @@
 # general configuration
-url: http://excentris.net
+url: http://junwei.co
 baseurl: ''
 
 # general configuration
 general:
   # an avatar or logo (optional)
-  logo: "/images/compass.png"
+  logo: "/images/avatar.jpg"
   # author will appear under the avatar (optional)
-  author: "Junwei Wang"
+  author: "Junwei WANG"
   # tagline will appear under the title (optional)
-  tagline: "Senior Software Engineer"
-  orgnization: "Baidu"
-  orgnization_link: "http://www.baidu.com"
+  tagline: "Ph.D. candidate"
+  orgnization: "CryptoExperts"
+  orgnization_link: "http://www.cryptoexperts.com"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
