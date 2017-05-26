@@ -5,7 +5,7 @@ baseurl: ''
 # general configuration
 general:
   # an avatar or logo (optional)
-  logo: "/images/avatar.jpg"
+  logo: "/images/avatar-crx.jpg"
   # author will appear under the avatar (optional)
   author: "Junwei WANG"
   # tagline will appear under the title (optional)
