@@ -1,0 +1,12 @@
+---
+title: Note List
+layout: base
+id: note-list
+---
+<h2>Lists of Note</h2>
+<ul style="list-style: .;">
+  {% assign sortedPosts = site.categories["note"] | sort: 'title' %}
+  {% for post in sortedPosts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a>, published at <small><em>{{ post.date | date: "%B %e, %Y" }}</em>. </small></li>
+  {% endfor %}
+</ul>

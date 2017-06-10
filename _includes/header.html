@@ -1,0 +1,38 @@
+<header>
+  {% if site.general.logo %}
+  <div class="logo-container">
+    <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.general.logo }}')"></a>
+  </div>
+  {% endif %}
+
+  {% if site.general.author %}
+  <div class="author-container"><h2>{{ site.general.author }}</h2></div>
+  {% endif %}
+
+  {% if site.general.tagline %}
+  <div class="tagline-container"><p>
+      {{ site.general.tagline }}
+      {% if site.general.orgnization %}
+                <br> at
+                {% if site.general.orgnization_link %}
+                <a href="{{ site.general.orgnization_link }}">
+                  {% endif %}
+                  {{ site.general.orgnization }}
+                  {% if site.general.orgnization_link %}
+                </a>
+                {% endif %}
+		{% endif %}
+  </p>
+
+  <ul style="list-style: none;">
+    {% if page.id == "home" %}
+    {% else %}
+    <li><a href="/#about">ABOUT</a></li>
+    <li><a href="/#contact">CONTACT</a></li>
+    <li><a href="/#publications">PUBLICATIONS</a></li>
+    {% endif %}
+  </ul>
+  </div>
+  {% endif %}
+
+</header>
