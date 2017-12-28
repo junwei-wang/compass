@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/junweiwang
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://junwei.co
+  * I am junweiwang (https://keybase.io/junweiwang) on keybase.
+  * I have a public key ASCL_GAZvfB3sqqKmpPlciI-CXxIUD6Y89DIsbVPLSEsOwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208bfc6019bdf077b2aa8a9a93e572223e097c48503e98f3d0c8b1b54f2d212c3b0a",
+      "host": "keybase.io",
+      "kid": "01208bfc6019bdf077b2aa8a9a93e572223e097c48503e98f3d0c8b1b54f2d212c3b0a",
+      "uid": "1dd0c8a97de1788c30ca2d4a45507d19",
+      "username": "junweiwang"
+    },
+    "merkle_root": {
+      "ctime": 1514466028,
+      "hash": "240b19aede209c310244f4b9e59740a9b9fc149029ef219786ad75970d4ee33cd18ee22cd4686eb1f9c22f83cc7c50903e1671942346c6c53160b294342ae49a",
+      "hash_meta": "e94e6fbdc874a46aa69e0119b1c71bf94bac944c2d6a9060259bb513a7f6fa41",
+      "seqno": 1864207
+    },
+    "service": {
+      "hostname": "junwei.co",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1514466085,
+  "expire_in": 504576000,
+  "prev": "6e8372eece3ebd1b111a57702b3d02a3fe7b9e7171ee81b1d2bb896c38d66fe7",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgi/xgGb3wd7KqipqT5XIiPgl8SFA+mPPQyLG1Ty0hLDsKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOGJmYzYwMTliZGYwNzdiMmFhOGE5YTkzZTU3MjIyM2UwOTdjNDg1MDNlOThmM2QwYzhiMWI1NGYyZDIxMmMzYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOGJmYzYwMTliZGYwNzdiMmFhOGE5YTkzZTU3MjIyM2UwOTdjNDg1MDNlOThmM2QwYzhiMWI1NGYyZDIxMmMzYjBhIiwidWlkIjoiMWRkMGM4YTk3ZGUxNzg4YzMwY2EyZDRhNDU1MDdkMTkiLCJ1c2VybmFtZSI6Imp1bndlaXdhbmcifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTQ0NjYwMjgsImhhc2giOiIyNDBiMTlhZWRlMjA5YzMxMDI0NGY0YjllNTk3NDBhOWI5ZmMxNDkwMjllZjIxOTc4NmFkNzU5NzBkNGVlMzNjZDE4ZWUyMmNkNDY4NmViMWY5YzIyZjgzY2M3YzUwOTAzZTE2NzE5NDIzNDZjNmM1MzE2MGIyOTQzNDJhZTQ5YSIsImhhc2hfbWV0YSI6ImU5NGU2ZmJkYzg3NGE0NmFhNjllMDExOWIxYzcxYmY5NGJhYzk0NGMyZDZhOTA2MDI1OWJiNTEzYTdmNmZhNDEiLCJzZXFubyI6MTg2NDIwN30sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJqdW53ZWkuY28iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTE0NDY2MDg1LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjZlODM3MmVlY2UzZWJkMWIxMTFhNTc3MDJiM2QwMmEzZmU3YjllNzE3MWVlODFiMWQyYmI4OTZjMzhkNjZmZTciLCJzZXFubyI6MTYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAu/VU48sKPXUcPIAxaghg3kY3Tam+Gzhtlxj/KeqjdEtbjr+kzEqZMWhr9jYQoBlq1S8CgCoPEakCC0Y/ScjsBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIo3QJh1lDEuJvkinKVkVVG7BiyuwdqPfY1Gzwf1aB73o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/junweiwang
+
+==================================================================
