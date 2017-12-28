@@ -7,17 +7,18 @@ $anchor-text-color: #f19c2d;
 $background-color: #FFFFFF;
 
 body {
-    font-family: 'Cardo', serif;
+    font-family: 'Share Tech Mono', SimKai, STKaiti, serif;
     font-size: 1.1em;
     color: $text-color;
     background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Share Tech Mono',SimHei,STHeiti,serif;
     font-weight: normal;
     font-style: normal;
     color: $heading-color;
+    text-align: center;
 }
 
 header,
@@ -37,6 +38,30 @@ header {
 .content {
     padding: 0 20px;
 }
+
+.author {
+    font-family: 'Share Tech Mono',SimSun, STSong,serif;
+    color: brown;
+    text-align: center;
+}
+em {
+    color: red;
+    // font-weight: bold;
+    font-style: normal;
+}
+.publications em {
+    color: black;
+    font-style:italic;
+}
+
+
+p {
+    text-indent: 2em; /*首行缩进*/
+}
+.remark {
+    color: gray;
+}
+
 
 /*** anchor tags ***/
 a:link,
@@ -95,7 +120,7 @@ since it must be aligned with the content */
 
 /*** author ***/
 .author-container h1 {
-    font-size: 2.0em;
+    font-size: 2em;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -171,8 +196,3 @@ footer {
 	padding: 0;
     }
 }
-
-em {
-    color: black;
-}
-

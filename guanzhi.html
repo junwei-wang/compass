@@ -1,0 +1,12 @@
+---
+title: Guanzhi List
+layout: base
+id: guanzhi-list
+---
+<h2>观止</h2>
+<ul style="list-style: .;">
+  {% assign sortedPosts = site.categories["guanzhi"] | sort: 'title' %}
+  {% for post in sortedPosts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a>, published at <small><em>{{ post.date | date: "%B %e, %Y" }}</em>. </small></li>
+  {% endfor %}
+</ul>

@@ -13,25 +13,26 @@
   <div class="tagline-container"><p>
       {{ site.general.tagline }}
       {% if site.general.orgnization %}
-                <br> at
-                {% if site.general.orgnization_link %}
-                <a href="{{ site.general.orgnization_link }}">
-                  {% endif %}
-                  {{ site.general.orgnization }}
-                  {% if site.general.orgnization_link %}
-                </a>
-                {% endif %}
-		{% endif %}
-  </p>
+      <br> at
+      {% if site.general.orgnization_link %}
+      <a href="{{ site.general.orgnization_link }}">
+        {% endif %}
+        {{ site.general.orgnization }}
+        {% if site.general.orgnization_link %}
+      </a>
+      {% endif %}
+      {% endif %}
+    </p>
 
-  <ul style="list-style: none;">
-    {% if page.id == "home" %}
-    {% else %}
-    <li><a href="/#about">ABOUT</a></li>
-    <li><a href="/#contact">CONTACT</a></li>
-    <li><a href="/#publications">PUBLICATIONS</a></li>
-    {% endif %}
-  </ul>
+    <ul style="list-style: none;">
+      {% if page.id == "home" %}
+      {% else %}
+      <li><a href="/#about">ABOUT</a></li>
+      <li><a href="/#contact">CONTACT</a></li>
+      <li><a href="/#publications">PUBLICATIONS</a></li>
+      <li><a href="/guanzhi">观止</a></li>
+      {% endif %}
+    </ul>
   </div>
   {% endif %}
 

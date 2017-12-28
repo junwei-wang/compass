@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="wrapper">
+      <main>
+	<h1 style="color:black;">{{ page.title }}</h1>
+	<h3 class="author">{{ page.author }}</h3>
+	{{ content }}
+
+	{% if page.remark %}
+	<div class="remark">（{{ page.remark }}）</div>
+	{% endif %}
+      </main>
+    </div>
+  </body>
+</html>
