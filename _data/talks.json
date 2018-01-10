@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Higher-order masking in practice:",
+        "subtitle": "A vector implementation of masked AES for ARM NEON",
+        "venue": {
+            "name": "CT-RSA 2015",
+            "url": "http://users.ics.aalto.fi/knyberg/cfp.html",
+            "city": "San Francisco"
+        },
+        "date": "22 April 2015",
+        "links": [
+            {
+                "type": "official",
+                "link": "https://www.rsaconference.com/events/us15/agenda/sessions/1760/secure-and-efficient-implementation-of-aes-based"
+            },
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2015-ctrsa-armneon.pdf"
+            }
+        ]
+    },
+    {
+        "title": "Reveal Secrets in Adoring Poitras -",
+        "subtitle": "A victory of reverse engineering and cryptanalysis over challenge 777",
+        "venue": {
+            "name": "CHES 2017",
+            "remark": "Rump Session",
+            "url": "https://ches.iacr.org/2017/",
+            "city": "Taipei"
+        },
+        "date": "26 September 2017",
+        "links": [
+            {
+                "type": "official",
+                "link": "https://ches.2017.rump.cr.yp.to/"
+            },
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2017-ches-rump-session.pdf"
+            }
+        ]
+    },
+    {
+        "title": "Reveal Secrets in Adoring Poitras -",
+        "subtitle": "A victory of reverse engineering and cryptanalysis over challenge 777",
+        "venue": {
+            "name": "ECRYPT-NET School on Correct and Secure Implementation",
+            "url": "https://hyperelliptic.org/tanja/ECRYPT-NET/",
+            "city": "Crete"
+        },
+        "date": "11 October 2017",
+        "links": [
+            {
+                "type": "video",
+                "link": "/videos/2017-crete.mp4"
+            },
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2017-ecrypt-summer-school.pdf"
+            }
+        ]
+    },
+    {
+        "title": "How to Reveal the Secrets of an Obscure White-Box Implementation",
+        "venue": {
+            "name": "RWC 2018",
+            "url": "https://rwc.iacr.org/2018/",
+            "city": "Zurich"
+        },
+        "date": "12 January 2018",
+        "links": [
+            {
+                "type": "video",
+                "link": "https://youtu.be/efrO-1wak6c"
+            },
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2018-rwc.pdf"
+            }
+        ]
+    }
+]

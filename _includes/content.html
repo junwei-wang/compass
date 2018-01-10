@@ -21,57 +21,78 @@
 </p>
 
 <h2 id='publications'>Publications</h2>
-<ol class='publications'>
+<ol class='publications' reversed>
+{% for pub in site.data.publications reversed %}
   <li>
-    <strong>Higher-order masking in practice: <em>A vector implementation of masked AES for ARM NEON</em></strong>
-    &nbsp; [<a href="http://link.springer.com/chapter/10.1007/978-3-319-16715-2_10" target="_blank">
-      <span class="fa fa-link"></span> </a> ,
-    <a href="pdfs/papers/armneon.pdf" target="_blank"> <span class="fa fa-file-pdf-o"></span> </a>,
-    <a href="https://github.com/junwei-wang/AES-ARM-NEON" target="_blank"> <span class="fa fa-code"></span> </a>]
+    {% if pub.preprint %}
+    <em>(preprint)</em>
+    {% endif %}
+    <strong>{{ pub.title }}: <em>{{ pub.subtitle }}</em></strong>
+    {% if pub.links %}
+    &nbsp;[
+    {% for link in pub.links %}
+    <a href="{{ link.link }}" target="_blank">
+    {% if link.type == "eprint" %}
+    <span class="fa fa-link"></span>
+    {% endif %}
+    {% if link.type == "proceeding" %}
+    <span class="ai ai-{{ link.publisher }} ai"></span>
+    {% endif %}
+    {% if link.type == "paper" %}
+    <span class="fa fa-file-pdf-o"></span>
+    {% endif %}
+    {% if link.type == "code" %}
+    <span class="fa fa-code"></span>
+    {% endif %}
+    </a>
+    {% endfor %}
+    ]
+    {% endif %}
     <br>
-    with Praveen Kumar Vadnala, Johann Großschädl, Qiuliang Xu
+    with
+    {% for name in pub.coauthor %}
+    {% assign author = site.data.people[name] %}
+    <a href="{{ author.url }}" target="_blank">{{ name }}</a>{% unless forloop.last %},{% endunless %}
+    {% endfor %}
     <br>
-    <em><a href="http://users.ics.aalto.fi/knyberg/cfp.html">CT-RSA 2015</a></em>
+    {% if pub.venue %}
+    <em><a href="{{ pub.venue.url }}">{{ pub.venue.name }}</a></em>
+    {% endif %}
   </li>
+  {% endfor %}
 </ol>
 
+
 <h2 id='talks'>Talks</h2>
-<ol class='publications'>
+<ol class='publications' reversed>
+  {% for talk in site.data.talks reversed %}
   <li>
-    <strong> Reveal Secrets in Adoring Poitras - <em>A generic attack on white-box cryptography</em></strong>
-    &nbsp;
-    [<a href="pdfs/slides/2017-ecrypt-summer-school.pdf" target="_blank"> <span class="fa fa-file-pdf-o"></span> </a>]
+    <strong>{{ talk.title }}
+      {% if talk.subtitle %}
+      <em>{{ talk.subtitle }}</em>
+      {% endif %}
+    </strong>
+    {% if talk.links %}
+    &nbsp;[
+    {% for link in talk.links %}
+    <a href="{{ link.link }}" target="_blank">
+    {% if link.type == "official" %}
+      <span class="fa fa-link"></span>
+    {% endif %}
+    {% if link.type == "slides" %}
+    <span class="fa fa-slideshare"></span>
+    {% endif %}
+    {% if link.type == "video" %}
+    <span class="fa fa-video-camera"></span>
+    {% endif %}
+    </a>
+    {% endfor %}
+    ]
+    {% endif %}
     <br>
-    <em><a href="https://hyperelliptic.org/tanja/ECRYPT-NET/">ECRYPT-NET School on Correct and Secure Implementation</a></em>
-    <br>11 October 2017, Crete
+    <em><a href="{{ talk.venue.url }}" target="_blank">{{ talk.venue.name }}</a></em>{% if talk.venue.remark %} ({{ talk.venue.remark }}){% endif %}, {{ talk.date }}, {{ talk.venue.city }}
   </li>
-  <li>
-    <strong> Reveal Secrets in Adoring Poitras - <em>A victory of reverse engineering and cryptanalysis over challenge 777</em></strong>
-    &nbsp;[<a href="https://ches.2017.rump.cr.yp.to/" target="_blank"> <span class="fa fa-link"></span> </a>,
-    <a href="pdfs/slides/2017-ches-rump-session.pdf" target="_blank"> <span class="fa fa-file-pdf-o"></span> </a>]
-    <br>
-    <em><a href="https://ches.iacr.org/2017/">CHES 2017</a></em>&nbsp; Rump Session, 26 September 2017, Taipei
-  </li>
-  <li>
-    <strong>Higher-order masking in practice: <em>A vector implementation of masked AES for ARM NEON</em></strong>
-    &nbsp; [<a href="https://www.rsaconference.com/events/us15/agenda/sessions/1760/secure-and-efficient-implementation-of-aes-based" target="_blank">
-      <span class="fa fa-link"></span> </a>,
-    <a href="pdfs/slides/2015-ctrsa-armneon.pdf" target="_blank"> <span class="fa fa-file-pdf-o"></span> </a>]
-    <br>
-    <em><a href="http://users.ics.aalto.fi/knyberg/cfp.html">CT-RSA 2015</a></em>, 22 April 2015, San Francisco
-  </li>
+  {% endfor %}
 </ol>
 
 <hr />
-
-<ul class="fa-ul main-list">
-  <li class="main-list-item">
-    <a href="https://github.com/junwei-wang"> <span class="fa fa-github main-list-item-icon"></span> </a>
-  </li>
-  <li class="main-list-item">
-    <a href="https://twitter.com/junwei_wang"> <span class="fa fa-twitter main-list-item-icon"></span> </a>
-  </li>
-  <li class="main-list-item">
-    <a href="https://www.linkedin.com/in/junweiwang/"> <span class="fa fa-linkedin main-list-item-icon"></span> </a>
-  </li>
-</ul>

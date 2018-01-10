@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Higher-order masking in practice",
+        "subtitle": "A vector implementation of masked AES for ARM NEON",
+        "coauthor": [
+            "Praveen Kumar Vadnala",
+            "Johann Großschädl",
+            "Qiuliang Xu"
+        ],
+        "links": [
+            {
+                "type": "proceeding",
+                "publisher": "springer",
+                "link": "http://link.springer.com/chapter/10.1007/978-3-319-16715-2_10"
+            },
+            {
+                "type": "paper",
+                "link": "/pdfs/papers/armneon.pdf"
+            },
+            {
+                "type": "code",
+                "link": "https://github.com/junwei-wang/AES-ARM-NEON"
+            }
+        ],
+        "venue": {
+            "name": "CT-RSA 2015",
+            "url": "http://users.ics.aalto.fi/knyberg/cfp.html"
+        }
+    },
+    {
+	"title": "How to Reveal the Secrets of an Obscure White-Box Implementation",
+	"preprint": true,
+	"coauthor": [
+	    "Louis Goubin",
+	    "Pascal Paillier",
+	    "Matthieu Rivain"
+	],
+	"links": [
+            {
+                "type": "eprint",
+                "link": "http://ia.cr/2018/098"
+            }
+	]
+    }
+]
