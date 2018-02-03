@@ -27,7 +27,7 @@
     {% if pub.preprint %}
     <em>(preprint)</em>
     {% endif %}
-    <strong>{{ pub.title }}: <em>{{ pub.subtitle }}</em></strong>
+    <strong>{{ pub.title }}{% if pub.subtitle %}: <em>{{ pub.subtitle }}</em>    {% endif %}</strong>
     {% if pub.links %}
     &nbsp;[
     {% for link in pub.links %}

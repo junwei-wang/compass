@@ -2,11 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    {% if page.type != 'index' %}
-    <title>{{ page.title }} - Topics in Cryptography</title>
-    {% else %}
     <title>{{ page.title }}</title>
-    {% endif %}
     <link rel="stylesheet" href="/assets/cayman/normalize.css">
     <link rel="stylesheet" href="/assets/cayman/cayman.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +10,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">
-	{% if page.type != 'index' %}Topic {{ page.topic_id }} : {% endif %}
-	{{ page.title }}
-      </h1>
-      {% if page.type != 'index' %}
-      <h2 class="project-tagline">100 Topics in Cryptography</h2>
-      {% endif %}
+      <h1 class="project-name">Topic {{ page.topic_id }} - {{ page.title }}</h1>
+      <h2 class="project-tagline">Topics in Cryptography</h2>
     </section>
 
     <section class="main-content">

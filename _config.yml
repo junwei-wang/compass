@@ -9,7 +9,7 @@ general:
   # author will appear under the avatar (optional)
   author: "Junwei WANG"
   # tagline will appear under the title (optional)
-  tagline: "Ph.D. candidate"
+  tagline: "Ph.D. Student"
   orgnization: "CryptoExperts"
   orgnization_link: "http://www.cryptoexperts.com"
   # if include_content is true, the contents of the content.html include will be

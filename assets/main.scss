@@ -21,18 +21,28 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-header,
+
 main {
     padding: 0 20px;
+    width: 72%;
+    margin-left: 28%;
+    padding: 0;
 }
 
 header {
     padding: 0 20px;
+    position: fixed;
+    float: left;
+    width: 20%;
+    taxt-aligh: right;
 }
 
 /*** wrapper div for both header and main ***/
 .wrapper {
-    margin-top: 10%;
+    margin-top: 8%;
+    margin-right: 15%;
+    margin-left: 15%;
+    // width: 1024px;
 }
 
 .content {
@@ -40,7 +50,7 @@ header {
 }
 
 .author {
-    font-family: 'Share Tech Mono',SimSun, STSong,serif;
+    font-family: 'Share Tech Mono',SimKai, STKai,serif;
     color: brown;
     text-align: center;
 }
@@ -119,16 +129,18 @@ since it must be aligned with the content */
 }
 
 /*** author ***/
-.author-container h1 {
-    font-size: 2em;
-    margin-top: 0;
+.author-container {
+    font-size: 1.5em;
+    margin-top: 0.5em;
     margin-bottom: 0;
     text-align: center;
 }
 
+
 /*** tagline ***/
 .tagline-container p {
-    font-size: 1.1em;
+    text-indent: 0;
+    font-size: 1.0pem;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -159,40 +171,26 @@ footer {
 }
 
 /*** media queries ***/
-/* X-Small devices (phones, 480px and up) */
-@media (min-width: 960px) {
-    /* wrapper stays 480px wide past 480px wide and is kept centered */
-    .wrapper {
-	width: 960px;
-	margin: 10% auto 0 auto;
+@media (max-width: 640px) {
+    main {
+	margin: 0;
     }
 }
 
 /* All other devices (768px and up) */
-@media (min-width: 1024px) {
-    /* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
+@media (max-width: 1024px) {
     .wrapper {
-	width: 960px;
+	width:auto;
+	margin: 2% 0%;
     }
-
-    /* the header column stays left and has a dynamic width with all contents
-	aligned right */
-    header {
-	float: left;
-	width: 20%;
-	text-align: right;
+    header{
+	float:none;
+	position:static;
+	width:auto;
+	padding-bottom: 10px;
     }
-
-    .author-container h1,
-    .logo-container,
-    .tagline-container p {
-	text-align: right;
-    }
-
     main {
-	width: 72%;
-	margin-left: 28%;
-	padding: 0;
+	margin: 2%;
+	width: auto;
     }
 }
