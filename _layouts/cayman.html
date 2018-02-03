@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - 100 Topics in Cryptography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Topic {{ page.topic_id }} - {{ page.title }}</h1>
+      <h2 class="project-tagline">100 Topics in Cryptography</h2>
+    </section>
+
+    <section class="main-content">
+      {{ content }}
+    </section>
+  </body>
+
+  {% include analytics.html %}
+  <link rel="stylesheet" href="/assets/cayman/normalize.css">
+  <link rel="stylesheet" href="/assets/cayman/cayman.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</html>
