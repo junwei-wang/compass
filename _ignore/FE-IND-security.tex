@@ -1,0 +1,48 @@
+\documentclass[convert={density=300,outext=.png}]{standalone}
+\usepackage[n, advantage, operators, sets, adversary, landau, probability,
+notions, logic, ff, mm, primitives, events, complexity, asymptotics, keys
+]{cryptocode}
+
+
+\newcommand{\IND}{\mathsf{IND}}
+\newcommand{\FE}{\mathrm{FE}}
+\newcommand{\Setup}{\mathsf{Setup}}
+\newcommand{\KeyDer}{\mathsf{KeyDer}}
+\newcommand{\Enc}{\mathsf{Enc}}
+\newcommand{\Dec}{\mathsf{Dec}}
+\newcommand{\msk}{\mathsf{msk}}
+\newcommand{\mpk}{\mathsf{mpk}}
+\renewcommand{\secparam}{1^\lambda}
+
+\begin{document}
+\procedure{$\ind\text{-}\FE_{\Enc}^\adv$ \hfill private-key}{
+  b \sample \bin \\
+  \msk \sample \Setup(\secparam) \\
+  (f_i)_i \sample \adv(\secparam), f_i \in \mathcal{F}, i \in [q] \\
+  \sk_{f_i} \sample \KeyDer(\msk, f_i) \\
+  (x_0, x_1) \sample \adv(\secparam,(\sk_{f_i})_i) \\
+  c_b \sample \Enc(\msk, x_b) \\
+  b' = \adv(\secparam, c_b) \\
+  \pcreturn b = b'
+}
+
+\hspace{2em}
+
+\procedure{$\ind\text{-}\FE_{\Enc}^\adv$ \hfill public-key}{
+  b \sample \bin \\
+  (\msk,\mpk) \sample \Setup(\secparam) \\
+  (f_i)_i \sample \adv(\secparam), f_i \in \mathcal{F}, i \in [q] \\
+  \sk_{f_i} \sample \KeyDer(\msk, f_i) \\
+  (x_0, x_1) \sample \adv(\secparam,(\sk_{f_i})_i) \\
+  c_b \sample \Enc(\mpk, x_b) \\
+  b' = \adv(\secparam, c_b) \\
+  \pcreturn b = b'
+}
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

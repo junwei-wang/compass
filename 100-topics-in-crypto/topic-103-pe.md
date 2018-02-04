@@ -1,7 +1,7 @@
 ---
-title: Functional Encryption
+title: Predicate Encryption
 layout: cayman
-topic_id:
+topic_id: 103
 category: crypto-topics
 ---
 

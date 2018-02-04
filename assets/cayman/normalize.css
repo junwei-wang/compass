@@ -99,6 +99,21 @@ a:hover {
   outline: 0;
 }
 
+/* visited link */
+a:visited {
+    color: LightSkyBlue;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
+
 /* Text-level semantics
    ========================================================================== */
 
