@@ -19,7 +19,7 @@
 	{{ page.title }}
       </h1>
       {% if page.type != 'index' %}
-      <h2 class="project-tagline">100 Topics in Cryptography</h2>
+      <h2 class="project-tagline"><a href="/100-topics-in-crypto/">100 Topics in Cryptography</a></h2>
       {% endif %}
     </section>
 
@@ -51,7 +51,8 @@
         poly: "\\textsf{poly}",
         SIS: "\\textsf{SIS}",
         ZZ: "\\mathbb{Z}",
-        norm: ["\\lVert #1\\rVert", 1]
+        norm: ["\\lVert #1\\rVert", 1],
+        O: ["\\mathcal{O}"]
       }
     }
     });
