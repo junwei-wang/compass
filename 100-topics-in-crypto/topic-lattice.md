@@ -171,13 +171,19 @@ $$(\mathbf{A}, s^T\mathbf{A}+e) \overset{c}{\approx} (\mathbf{A},b)$$ for a unif
 
 d-LWE is as hard as LWE.
 
+### OWF and PRNG
+
+### Symmetric-Key Encryption
+
+### Public-Key Encryption
+
 ## References
 
 - [STOC96] Ajtai. **Generating hard instances of lattice problems.**
   [ECCC](https://eccc.weizmann.ac.il/eccc-reports/1996/TR96-007/Paper.pdf)
   [ppt](/pdfs/slides/lattice-ajtai.ppt)
-> We give a random class of $n$ dimensional lattices so that, if there is a probabilistic polynomial time algorithm which
-> finds a short vector in a random lattice with a probability of at least 1/2 then there is also a probabilistic
+> We give a random class of $n$ dimensional lattices so that, if there is a probabilistic polynomial time algorithm
+> which finds a short vector in a random lattice with a probability of at least 1/2 then there is also a probabilistic
 > polynomial time algorithm which solves the following three lattice problems in every $n$ dimensional lattice with a
 > probability exponentially close to one.
 > 1. Find the length of a shortest nonzero vector in an $n$-dimensional lattice, approximately, up to a polynomial
