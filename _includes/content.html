@@ -1,8 +1,8 @@
 <h2 id="contact">About Me</h2>
 <p>I am a Ph.D student at <a href="https://www.cryptoexperts.com">CryptoExperts</a>
-  under the supervision of <a href="http://www.jscoron.fr/">Jean-Sébastien CORON</a>,
+  under the supervision of <a href="http://www.crypto-uni.lu/jscoron/index.html">Jean-Sébastien CORON</a>,
   <a href="http://www.math.univ-paris13.fr/~mesnager/">Sihem MESNAGER</a>,
-  <a href="http://dblp.uni-trier.de/pers/hd/p/Paillier:Pascal">Pascal PAILLIER</a>,
+  <a href="https://scholar.google.com/citations?user=xwzhjfoAAAAJ&hl=en">Pascal PAILLIER</a>,
   and <a href="http://www.matthieurivain.com/">Matthieu RIVAIN</a>.
 
   I am also an <a href="http://www.ecrypt.eu.org/net/">ECRYPT-NET</a> fellow
@@ -13,16 +13,16 @@
 <p>My research interest is white-box cryptography.</p>
 <p>My curriculum vitae can be found <a href="./pdfs/cv.pdf">here</a>.</p>
 
-  <h2 id="contact">Contact</h2>
+<h2 id="contact">Contact</h2>
 <p>
   <div>41 Boulevard des Capucines</div>
   <div>75002, Paris, France</div>
-  <div>junwei.wang@cryptoexperts.com</div>
+  <div>firstname.lastname@cryptoexperts.com</div>
 </p>
 
 <h2 id='publications'>Publications</h2>
 <ol class='publications' reversed>
-{% for pub in site.data.publications reversed %}
+  {% for pub in site.data.publications reversed %}
   <li>
     {% if pub.preprint %}
     <em>(preprint)</em>
@@ -32,18 +32,18 @@
     &nbsp;[
     {% for link in pub.links %}
     <a href="{{ link.link }}" target="_blank">
-    {% if link.type == "eprint" %}
-    <span class="fa fa-link"></span>
-    {% endif %}
-    {% if link.type == "proceeding" %}
-    <span class="ai ai-{{ link.publisher }} ai"></span>
-    {% endif %}
-    {% if link.type == "paper" %}
-    <span class="fa fa-file-pdf-o"></span>
-    {% endif %}
-    {% if link.type == "code" %}
-    <span class="fa fa-code"></span>
-    {% endif %}
+      {% if link.type == "eprint" %}
+      <span class="fa fa-link"/>
+      {% endif %}
+      {% if link.type == "proceeding" %}
+      <span class="ai ai-{{ link.publisher }} ai"/>
+      {% endif %}
+      {% if link.type == "paper" %}
+      <span class="fa fa-file-pdf-o"/>
+      {% endif %}
+      {% if link.type == "code" %}
+      <span class="fa fa-code"/>
+      {% endif %}
     </a>
     {% endfor %}
     ]
@@ -76,15 +76,15 @@
     &nbsp;[
     {% for link in talk.links %}
     <a href="{{ link.link }}" target="_blank">
-    {% if link.type == "official" %}
-      <span class="fa fa-link"></span>
-    {% endif %}
-    {% if link.type == "slides" %}
-    <span class="fa fa-slideshare"></span>
-    {% endif %}
-    {% if link.type == "video" %}
-    <span class="fa fa-video-camera"></span>
-    {% endif %}
+      {% if link.type == "official" %}
+      <span class="fa fa-link"/>
+      {% endif %}
+      {% if link.type == "slides" %}
+      <span class="fa fa-slideshare"/>
+      {% endif %}
+      {% if link.type == "video" %}
+      <span class="fa fa-video-camera"/>
+      {% endif %}
     </a>
     {% endfor %}
     ]
@@ -95,4 +95,4 @@
   {% endfor %}
 </ol>
 
-<hr />
+<!-- <hr /> -->

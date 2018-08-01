@@ -3,19 +3,19 @@
 
 $text-color: #333232;
 $heading-color: #111;
-$anchor-text-color: #f19c2d;
+$anchor-text-color: #8080ff;
 $background-color: #FFFFFF;
 
 body {
-    font-family: 'Share Tech Mono', SimKai, STKaiti, serif;
+    font-family: 'Open Sans', SimKai, STKaiti, sans-serif;
     font-size: 1.1em;
     color: $text-color;
     background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Share Tech Mono',SimHei,STHeiti,serif;
-    font-weight: normal;
+    font-family: 'PT Sans',SimHei,STHeiti,serif;
+    font-weight: bold;
     font-style: normal;
     color: $heading-color;
     text-align: center;
@@ -66,7 +66,7 @@ em {
 
 
 p {
-    text-indent: 2em; /*首行缩进*/
+    // text-indent: 2em; /*首行缩进*/
 }
 .remark {
     color: gray;
@@ -118,14 +118,14 @@ since it must be aligned with the content */
 }
 
 .logo {
-    width: 112px;
-    height: 112px;
+    width: 130px;
+    height: 130px;
     display: inline-block;
     background-size: cover;
-    border-radius: 50%;
+    // border-radius: 50%;
     -moz-border-radius: 50%;
-    border: 2px solid $background-color;
-    box-shadow: 0 0 0 1px $anchor-text-color;
+    // border: 2px solid $background-color;
+    // box-shadow: 0 0 0 1px $anchor-text-color;
 }
 
 /*** author ***/
