@@ -7,7 +7,7 @@ $anchor-text-color: #8080ff;
 $background-color: #FFFFFF;
 
 body {
-    font-family: 'Open Sans', SimKai, STKaiti, sans-serif;
+    font-family: 'Open Sans', KaiTi, SimKai, STKaiti, "华文楷体", "楷体", sans-serif;
     font-size: 1.1em;
     color: $text-color;
     background-color: $background-color;
@@ -122,10 +122,10 @@ since it must be aligned with the content */
     height: 130px;
     display: inline-block;
     background-size: cover;
-    // border-radius: 50%;
+    border-radius: 30%;
     -moz-border-radius: 50%;
     // border: 2px solid $background-color;
-    // box-shadow: 0 0 0 1px $anchor-text-color;
+    box-shadow: 0 0 0 2px $anchor-text-color;
 }
 
 /*** author ***/
