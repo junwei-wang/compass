@@ -42,7 +42,7 @@
     },
     {
         "title": "Reveal Secrets in Adoring Poitras -",
-        "subtitle": "A victory of reverse engineering and cryptanalysis over challenge 777",
+        "subtitle": "A generic attack on white-box cryptography",
         "venue": {
             "name": "ECRYPT-NET School on Correct and Secure Implementation",
             "url": "https://hyperelliptic.org/tanja/ECRYPT-NET/",
