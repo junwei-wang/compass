@@ -41,5 +41,20 @@
                 "link": "http://ia.cr/2018/098"
             }
 	]
+    },
+    {
+	"title": "Higher-Order DCA against Standard Side-Channel Countermeasures",
+	"preprint": true,
+	"coauthor": [
+	    "Andrey Bogdanov",
+	    "Matthieu Rivain",
+	    "Philip S. Vejre",
+	],
+	"links": [
+            {
+                "type": "eprint",
+                "link": "http://ia.cr/2018/869"
+            }
+	]
     }
 ]
