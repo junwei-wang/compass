@@ -78,5 +78,20 @@
                 "link": "/pdfs/slides/2018-rwc.pdf"
             }
         ]
+    },
+    {
+        "title": "White-Box Cryptography",
+        "venue": {
+            "name": "PANDA 2018",
+            "url": "https://www.opsefy.com/panda/index/index.html",
+            "city": "Beijing"
+        },
+        "date": "16 October 2018",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2018-panda.pdf"
+            }
+        ]
     }
 ]
