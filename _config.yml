@@ -49,3 +49,21 @@ permalink: none
 
 # include diretory
 #include:              ["_posts"]
+
+defaults:
+  - scope:
+      path: "pdfs/"
+    values:
+      pdf: true
+  - scope:
+      path: "pdfs/cheat-sheets"
+    values:
+      cheetsheet: true
+  - scope:
+      path: "pdfs/slides"
+    values:
+      slides: true
+  - scope:
+      path: "pdfs/resources"
+    values:
+      resources: true
