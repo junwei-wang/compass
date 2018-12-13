@@ -1,5 +1,5 @@
 # general configuration
-url: http://junwei.co
+url: https://junwei.co
 baseurl: ''
 
 # general configuration
@@ -11,7 +11,7 @@ general:
   # tagline will appear under the title (optional)
   tagline: "Ph.D. Student"
   orgnization: "CryptoExperts"
-  orgnization_link: "http://www.cryptoexperts.com"
+  orgnization_link: "https://www.cryptoexperts.com"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true

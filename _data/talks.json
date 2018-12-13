@@ -93,5 +93,20 @@
                 "link": "/pdfs/slides/2018-panda.pdf"
             }
         ]
-    }
+    },
+    {
+        "title": "Recent Progress on White-Box Attacks",
+        "venue": {
+            "name": "Journée \"Protection du Code et des Données\"",
+            "url": "http://sebastien.bardin.free.fr/2018-obfuscation-day.html",
+            "city": "Paris Saclay"
+        },
+        "date": "13 December 2018",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2018-paris-saclay.pdf"
+            }
+        ]
+    },
 ]
