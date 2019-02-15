@@ -49,15 +49,15 @@
     ]
     {% endif %}
     <br>
-    with
+    <em>with</em>
     {% for name in pub.coauthor %}
     {% assign author = site.data.people[name] %}
     <a href="{{ author.url }}" target="_blank">{{ name }}</a>{% unless forloop.last %},{% endunless %}
     {% endfor %}
     <br>
     {% if pub.venue %}
-    at
-    <em><a href="{{ pub.venue.url }}">{{ pub.venue.name }}</a></em>
+    <em>at</em>
+    <a href="{{ pub.venue.url }}">{{ pub.venue.name }}</a>
     {% endif %}
   </li>
   {% endfor %}
