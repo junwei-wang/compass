@@ -44,16 +44,35 @@
     },
     {
 	"title": "Higher-Order DCA against Standard Side-Channel Countermeasures",
-	"preprint": true,
 	"coauthor": [
 	    "Andrey Bogdanov",
 	    "Matthieu Rivain",
 	    "Philip S. Vejre",
 	],
+        "venue": {
+            "name": "COSADE 2019",
+            "url": "https://www.cosade.org/"
+        },
 	"links": [
             {
                 "type": "eprint",
                 "link": "http://ia.cr/2018/869"
+            }
+	]
+    },
+    {
+	"title": "Analysis and Improvement of Differential Computation Attacks against Internally-Encoded White-Box Implementations",
+	"coauthor": [
+	    "Matthieu Rivain"
+	],
+        "venue": {
+            "name": "CHES 2019",
+            "url": "https://ches.iacr.org/2019/"
+        },
+	"links": [
+            {
+                "type": "eprint",
+                "link": "http://ia.cr/2019/076"
             }
 	]
     }
