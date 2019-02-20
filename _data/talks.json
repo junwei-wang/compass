@@ -109,4 +109,18 @@
             }
         ]
     },
+    {
+        "title": " Analysis and Improvement of Differential Computation Attacks against Internally-Encoded White-Box Implementations",
+        "venue": {
+            "name": "LACS seminar",
+            "city": "Esch-sur-Alzette"
+        },
+        "date": "20 February 2019",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2019-lacs.pdf"
+            }
+        ]
+    },
 ]
