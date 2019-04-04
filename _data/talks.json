@@ -113,6 +113,7 @@
         "title": " Analysis and Improvement of Differential Computation Attacks against Internally-Encoded White-Box Implementations",
         "venue": {
             "name": "LACS seminar",
+	    "url": "http://www.crypto-uni.lu/index.html",
             "city": "Esch-sur-Alzette"
         },
         "date": "20 February 2019",
@@ -120,6 +121,21 @@
             {
                 "type": "slides",
                 "link": "/pdfs/slides/2019-lacs.pdf"
+            }
+        ]
+    },
+    {
+        "title": "Higher-Order DCA against Standard Side-Channel Countermeasures",
+        "venue": {
+            "name": "COSADE 2019",
+            "url": "https://www.cosade.org/",
+            "city": "Darmstadt"
+        },
+        "date": "4 April 2019",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2019-cosade.pdf"
             }
         ]
     },

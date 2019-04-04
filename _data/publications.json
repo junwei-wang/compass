@@ -35,6 +35,10 @@
 	    "Pascal Paillier",
 	    "Matthieu Rivain"
 	],
+        "venue": {
+            "name": "Journal of Cryptographic Engineering",
+            "url": "https://link.springer.com/article/10.1007/s13389-019-00207-5"
+        },
 	"links": [
             {
                 "type": "eprint",
