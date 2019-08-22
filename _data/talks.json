@@ -139,4 +139,34 @@
             }
         ]
     },
+    {
+        "title": "Differential Computation Analysis against Internally-Encoded White-Box Implementations",
+        "venue": {
+            "name": "WhibOx 2019",
+            "url": "https://www.cryptoexperts.com/whibox2019/",
+            "city": "Darmstadt"
+        },
+        "date": "18 May 2019",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2019-whibox-dca.pdf"
+            }
+        ]
+    },
+    {
+        "title": "Call for Contribution: A New White-Box Analytic Tool",
+        "venue": {
+            "name": "WhibOx 2019",
+            "url": "https://www.cryptoexperts.com/whibox2019/",
+            "city": "Darmstadt"
+        },
+        "date": "19 May 2019",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2019-whibox-wyverse.pdf"
+            }
+        ]
+    },
 ]
