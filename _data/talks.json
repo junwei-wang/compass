@@ -169,4 +169,19 @@
             }
         ]
     },
+    {
+        "title": "Analysis and Improvement of Differential Computation Attacks against Internally-Encoded White-Box Implementations",
+        "venue": {
+            "name": "CHES 2019",
+            "url": "https://ches.iacr.org/2019/",
+            "city": "Atlanta"
+        },
+        "date": "26 August 2019",
+        "links": [
+            {
+                "type": "slides",
+                "link": "/pdfs/slides/2019-whibox-wyverse.pdf"
+            }
+        ]
+    }
 ]
