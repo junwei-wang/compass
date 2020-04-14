@@ -7,18 +7,18 @@ $anchor-text-color: #8080ff;
 $background-color: #FFFFFF;
 
 body {
-    font-family: 'Open Sans', KaiTi, SimKai, STKaiti, "华文楷体", "楷体", sans-serif;
+    font-family: "Minion Pro Caption", minion-pro-caption, "Minion Pro", "Garamond Premier Pro Caption", "Garamond Premier Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif, 'Open Sans', KaiTi, SimKai, STKaiti, "华文楷体", "楷体", sans-serif;
     font-size: 1.1em;
     color: $text-color;
     background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT Sans',SimHei,STHeiti,serif;
+    font-family: "Garamond Premier Pro", garamond-premier-pro, "Adobe Caslon Pro", "Minion Pro", Constantia, serif, SimHei,STHeiti,serif;
     font-weight: bold;
     font-style: normal;
     color: $heading-color;
-    text-align: center;
+    text-align: left;
 }
 
 

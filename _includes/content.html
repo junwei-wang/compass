@@ -27,7 +27,7 @@
     {% if pub.preprint %}
     <em>(preprint)</em>
     {% endif %}
-    <strong>{{ pub.title }}{% if pub.subtitle %}: <em>{{ pub.subtitle }}</em>    {% endif %}</strong>
+    {{ pub.title }}{% if pub.subtitle %}: <em>{{ pub.subtitle }}</em>    {% endif %}
     {% if pub.links %}
     &nbsp;[
     {% for link in pub.links %}
@@ -49,14 +49,14 @@
     ]
     {% endif %}
     <br>
-    <em>with</em>
+    with
     {% for name in pub.coauthor %}
     {% assign author = site.data.people[name] %}
     <a href="{{ author.url }}" target="_blank">{{ name }}</a>{% unless forloop.last %},{% endunless %}
     {% endfor %}
     <br>
     {% if pub.venue %}
-    <em>at</em>
+    at
     <a href="{{ pub.venue.url }}">{{ pub.venue.name }}</a>
     {% endif %}
   </li>
@@ -68,11 +68,10 @@
 <ol class='publications' reversed>
   {% for talk in site.data.talks reversed %}
   <li>
-    <strong>{{ talk.title }}
+    {{ talk.title }}
       {% if talk.subtitle %}
       <em>{{ talk.subtitle }}</em>
       {% endif %}
-    </strong>
     {% if talk.links %}
     &nbsp;[
     {% for link in talk.links %}
@@ -91,7 +90,7 @@
     ]
     {% endif %}
     <br>
-    <em><a href="{{ talk.venue.url }}" target="_blank">{{ talk.venue.name }}</a></em>{% if talk.venue.remark %} ({{ talk.venue.remark }}){% endif %}, {{ talk.date }}, {{ talk.venue.city }}
+    <a href="{{ talk.venue.url }}" target="_blank">{{ talk.venue.name }}</a>{% if talk.venue.remark %} ({{ talk.venue.remark }}){% endif %}, {{ talk.date }}, {{ talk.venue.city }}
   </li>
   {% endfor %}
 </ol>
